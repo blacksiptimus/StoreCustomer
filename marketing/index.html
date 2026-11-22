@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StoreCustomer</title>
+<style>
+  :root{--blue:#2563EB;--blue-dark:#1D4ED8;--amber:#F59E0B;--bg:#F6F7F9;--ink:#0E1726}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:0 20px}
+  header{background:linear-gradient(135deg,#2F6FED,#1D4ED8);color:#fff;padding:40px 20px;text-align:center;margin:0 -20px 32px}
+  header h1{font-size:1.7rem}
+  header p{color:#BFDBFE;margin-top:4px}
+  main{max-width:780px;margin:0 auto 64px}
+  article{background:#fff;border:1px solid #E9EDF1;border-radius:18px;padding:28px 32px;box-shadow:0 6px 18px rgba(14,23,38,.06)}
+  h1.sec{font-size:1.4rem;margin-bottom:16px}
+  h2{color:var(--blue-dark);font-size:1.15rem;margin:22px 0 8px}
+  p,li{color:#334155;margin:8px 0}
+  ul{padding-left:22px}
+  .meta{color:#64748B;font-size:.9rem}
+  .toggle{display:flex;gap:8px;margin-bottom:24px}
+  .toggle button{flex:1;padding:10px;border-radius:12px;border:1.5px solid var(--blue);background:#fff;color:var(--blue);font-weight:700;cursor:pointer}
+  .toggle button.active{background:var(--blue);color:#fff}
+  a{color:var(--blue)}
+  [dir="rtl"]{text-align:right}
+  [dir="rtl"] ul{padding-left:0;padding-right:22px}
+  footer{max-width:780px;margin:12px auto 48px;color:#64748B;font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>StoreCustomer</h1>
+  <p>اكتشف ما تحبه</p>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-ar" onclick="setLang('ar')">العربية</button>
+  </div>
+
+  <article id="doc-en" lang="en">
+    <h1 class="sec">Shop the catalog, then place your order</h1>
+    <p class="meta">StoreCustomer for iPhone and iPad. Prices are shown in Jordanian dinar (JOD).</p>
+    <p>Browse what is in the store, keep a cart on your phone, and place an order when you are ready. You can look around without an account. Signing in is required to place an order.</p>
+
+    <h2>Find what you want</h2>
+    <ul>
+      <li>A home screen with categories and a product grid.</li>
+      <li>Search by name, then sort or filter by price and stock.</li>
+      <li>Product photos, the price, options when a product has them, and a short description.</li>
+    </ul>
+
+    <h2>Cart and orders</h2>
+    <ul>
+      <li>Add items, change the quantity, and see the subtotal.</li>
+      <li>Place an order after you sign in. A new order starts unpaid.</li>
+      <li>Open My Orders to filter by status and date, then see the items in an order.</li>
+    </ul>
+
+    <h2>Arabic and English</h2>
+    <p>The app is in Arabic and English. Arabic uses a right-to-left layout. Choose light mode, dark mode, or follow the system. Your language and appearance stay saved on the device.</p>
+
+    <h2>More</h2>
+    <p>Questions: <a href="mailto:hsa7@hotmail.com">hsa7@hotmail.com</a>. Read the <a href="../privacy-policy.html">privacy policy</a> or the <a href="../support/">support page</a>.</p>
+  </article>
+
+  <article id="doc-ar" lang="ar" dir="rtl" style="display:none">
+    <h1 class="sec">تصفّح المتجر، ثم أرسل طلبك</h1>
+    <p class="meta">StoreCustomer لهاتف iPhone وجهاز iPad. الأسعار بالدينار الأردني.</p>
+    <p>تصفّح ما هو متوفر في المتجر، واحتفظ بالسلة على هاتفك، وأرسل الطلب عندما تكون جاهزًا. يمكنك التصفح دون حساب. تسجيل الدخول مطلوب لإرسال الطلب.</p>
+
+    <h2>اعثر على ما تريد</h2>
+    <ul>
+      <li>شاشة رئيسية تعرض الأقسام وشبكة المنتجات.</li>
+      <li>بحث بالاسم، ثم ترتيب أو تصفية حسب السعر والتوفر.</li>
+      <li>صور المنتج وسعره وخياراته إن وُجدت، مع وصف مختصر.</li>
+    </ul>
+
+    <h2>السلة والطلبات</h2>
+    <ul>
+      <li>أضف المنتجات، وعدّل الكمية، وشاهد المجموع.</li>
+      <li>أرسل الطلب بعد تسجيل الدخول. يبدأ الطلب الجديد غير مدفوع.</li>
+      <li>افتح «طلباتي» للتصفية حسب الحالة والتاريخ، ثم اعرض أصناف الطلب.</li>
+    </ul>
+
+    <h2>العربية والإنجليزية</h2>
+    <p>التطبيق بالعربية والإنجليزية. العربية بواجهة من اليمين إلى اليسار. اختر الوضع الفاتح أو الداكن أو اتباع مظهر النظام. تُحفظ اللغة والمظهر على الجهاز.</p>
+
+    <h2>المزيد</h2>
+    <p>للاستفسار: <a href="mailto:hsa7@hotmail.com">hsa7@hotmail.com</a>. اقرأ <a href="../privacy-policy.html">سياسة الخصوصية</a> أو <a href="../support/">صفحة الدعم</a>.</p>
+  </article>
+</main>
+<footer>StoreCustomer — Customer storefront app</footer>
+<script>
+  function setLang(l){
+    var en=document.getElementById('doc-en'), ar=document.getElementById('doc-ar');
+    en.style.display = l==='en'?'block':'none';
+    ar.style.display = l==='ar'?'block':'none';
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-ar').classList.toggle('active', l==='ar');
+    document.documentElement.lang = l;
+    document.documentElement.dir = l==='ar' ? 'rtl' : 'ltr';
+  }
+</script>
+</body>
+</html>
